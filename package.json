@@ -1,7 +1,7 @@
 {
   "name": "passport-ok-strategy",
   "version": "0.0.1",
-  "description": "",
+  "description": "passport odnoklassniki strategy",
   "main": "./lib",
   "scripts": {
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/ --reporter spec --bail --recursive",
@@ -10,11 +10,15 @@
   },
   "keywords": [
     "passport",
-    "odnkolassniki",
+    "odnoklassniki",
     "одноклассники"
   ],
   "author": "Vladimir Polyakov <nrd11k@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvpnt/passport-ok-strategy.git"
+  },
   "dependencies": {
     "passport-oauth2": "1.3.0"
   },
