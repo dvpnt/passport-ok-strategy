@@ -5,7 +5,8 @@
   "main": "./lib",
   "scripts": {
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/ --reporter spec --bail --recursive",
-    "test": "mocha test/ --reporter spec --bail --recursive"
+    "test": "mocha test/ --reporter spec --bail --recursive",
+    "lint": "eslint ./"
   },
   "keywords": [
     "passport",
@@ -18,8 +19,9 @@
     "passport-oauth2": "1.3.0"
   },
   "devDependencies": {
+    "eslint": "2.8.0",
     "expect.js": "0.3.1",
-    "istanbul": "^0.4.3",
+    "istanbul": "0.4.3",
     "mocha": "2.4.5",
     "sinon": "1.17.3",
     "underscore": "1.8.3"
