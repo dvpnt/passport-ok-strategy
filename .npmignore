@@ -1,0 +1,7 @@
+test/
+coverage/
+*.log
+.eslintrc.json
+.eslintignore
+.npmignore
+.gitignore
