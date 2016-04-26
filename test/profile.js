@@ -131,7 +131,9 @@ describe('Profile', function() {
 
 			expect(profile.photos).to.have.length(2);
 			expect(profile.photos[0].value).to.eql(profileData.pic_1);
+			expect(profile.photos[0].type).to.eql('pic_1');
 			expect(profile.photos[1].value).to.eql(profileData.pic_2);
+			expect(profile.photos[1].type).to.eql('pic_2');
 		});
 	});
 
