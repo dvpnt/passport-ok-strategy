@@ -1,4 +1,5 @@
 # passport-ok-strategy
+[![Build Status](https://api.travis-ci.org/dvpnt/passport-ok-strategy.svg)](https://travis-ci.org/dvpnt/passport-ok-strategy)
 
 [Passport](http://passportjs.org/) strategy for authenticating with [odnoklassniki](https://ok.ru/)
 using the OAuth 2.0 API.
