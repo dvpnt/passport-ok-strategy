@@ -1,6 +1,7 @@
 # passport-ok-strategy
 [![Build Status](https://api.travis-ci.org/dvpnt/passport-ok-strategy.svg)](https://travis-ci.org/dvpnt/passport-ok-strategy)
 [![Coverage Status](https://coveralls.io/repos/github/dvpnt/passport-ok-strategy/badge.svg?branch=master)](https://coveralls.io/github/dvpnt/passport-ok-strategy?branch=master)
+[![NPM Version](https://img.shields.io/npm/v/passport-ok-strategy.svg)](https://www.npmjs.com/package/passport-ok-strategy)
 
 [Passport](http://passportjs.org/) strategy for authenticating with [odnoklassniki](https://ok.ru/)
 using the OAuth 2.0 API.
@@ -14,7 +15,7 @@ using the OAuth 2.0 API.
 
 ```js
 var passport = require('passport'),
-    OdnoklassnikiStrategy = require('passport-ok-strategy');
+    OdnoklassnikiStrategy = require('passport-ok-strategy').Strategy;
 
 passport.use(new OdnoklassnikiStrategy({
     clientID: '<app id>',
