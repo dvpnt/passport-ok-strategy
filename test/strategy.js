@@ -8,16 +8,16 @@ var expect = require('expect.js'),
 	Strategy = require('../lib').Strategy;
 
 describe('Strategy', function() {
+	var strategy;
 	describe('creating', function() {
 		it('should try create without public key', function() {
 			expect(function() {
-				new Strategy({}, _.noop);
+				strategy = new Strategy({}, _.noop);
 			}).to.throwException(Error);
 		});
 
 		it('should create strategy', function() {
-			var strategy = helpers.createStrategy();
-
+			strategy = helpers.createStrategy();
 			expect(strategy.name).to.eql('odnoklassniki');
 		});
 	});
