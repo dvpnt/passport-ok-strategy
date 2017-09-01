@@ -103,7 +103,7 @@ describe('Profile', function() {
 					last_name: 'Surname',
 					name: 'Name Surname',
 					gender: 'male',
-					has_email: true,
+					email: 'hey@arnold.com',
 					pic_1: 'http://i113.odnoklassniki.ru/getImage?photoId=93412337&photoType=4',
 					pic_2: 'http://i342.odnoklassniki.ru/getImage?photoId=93412337&photoType=2'
 				},
@@ -127,7 +127,8 @@ describe('Profile', function() {
 			expect(profile.gender).to.eql(profileData.gender);
 			expect(profile.profileUrl)
 				.to.eql('https://odnoklassniki.ru/profile/' + profile.id);
-			expect(profile.emails).to.have.length(0);
+			expect(profile.emails).to.have.length(1);
+			expect(profile.emails).to.eql([{value: profileData.email}]);
 
 			expect(profile.photos).to.have.length(2);
 			expect(profile.photos[0].value).to.eql(profileData.pic_1);
